@@ -23,6 +23,14 @@
       "category": "Educação",
       "price": 1980,
       "createdAt": "2025-05-06T08:22:44.505Z"
+    },
+    {
+      "description": "Assinatura Spotify Premium",
+      "price": 36,
+      "category": "Entretenimento",
+      "type": "outcome",
+      "createdAt": "2025-05-09T11:46:52.410Z",
+      "id": 4
     }
   ]
 }
