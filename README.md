@@ -53,6 +53,7 @@ To run the project locally, follow these steps:
 - React
 - API
 - JSON Server
+- Radix UI
 - Styled Components
 - Contexts
 - React Hook Form
