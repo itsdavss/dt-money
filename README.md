@@ -1,54 +1,64 @@
-# React + TypeScript + Vite
+# DT Money
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This was the project developed in level 03 of Rocketseat's React course.
 
-Currently, two official plugins are available:
+## Table of contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Overview](#overview)
+  - [Screenshots](#screenshots)
+- [How to Run the Project](#how-to-run-the-project)
+- [Developed with](#developed-with)
+- [Author](#author)
 
-## Expanding the ESLint configuration
+## Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+This application is designed to help users manage their personal finances with ease. It allows users to log financial transactions, categorizing each entry as income or expense and assigning relevant values and labels. The app also features powerful search and filter capabilities, enabling users to quickly find specific records based on their preferences. During development, JSON Server was used to simulate real API interactions, ensuring a realistic testing environment.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Screenshots
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+#### Desktop design
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Initial State
+![](screenshots/desktop_1.png)
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+### Search transactions
+![](screenshots/desktop_2.png)
+
+### Adding a new transaction
+![](screenshots/desktop_3.png)
+
+## How to Run the Project
+
+To run the project locally, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone "https://github.com/itsdavss/dt-money"
+
+2. Navigate to the project folder:
+   ```bash
+   cd dt-money
+
+3. Install the dependencies:
+   ```bash
+   npm install
+
+4. Start the development server:
+   ```bash
+   npm run dev
+
+## Developed with
+
+- Typescript 
+- React
+- API
+- JSON Server
+- Styled Components
+- Contexts
+- React Hook Form
+- Zod
+
+## Author
+
+- GitHub - [itsdavss](https://github.com/itsdavss)
+- My portfolio - [Davi Oliveira](https://itsdavss.github.io/portfolio-davi/)
