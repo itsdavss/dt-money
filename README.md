@@ -43,6 +43,10 @@ To run the project locally, follow these steps:
    ```bash
    npm install
 
+4. Start the api server:
+   ```bash
+   npm run dev:server
+
 4. Start the development server:
    ```bash
    npm run dev
