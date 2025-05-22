@@ -7,6 +7,14 @@ export const TransactionsContainer = styled.main`
   padding: 0 1.5rem;
 `;
 
+export const TransactionsTableWrapper = styled.div`
+  overflow-x: auto;
+
+  @media (max-width: 1023px) {
+    border-radius: 6px;
+  }
+`;
+
 export const TransactionsTable = styled.table`
   width: 100%;
   border-collapse: separate;
