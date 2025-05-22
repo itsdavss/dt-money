@@ -12,7 +12,7 @@ This was the project developed in level 03 of Rocketseat's React course.
 
 ## Overview
 
-This application is designed to help users manage their personal finances with ease. It allows users to log financial transactions, categorizing each entry as income or expense and assigning relevant values and labels. The app also features powerful search and filter capabilities, enabling users to quickly find specific records based on their preferences. During development, JSON Server was used to simulate real API interactions, ensuring a realistic testing environment.
+This application is designed to help users manage their personal finances with ease. It allows users to log financial transactions, categorizing each entry as income or expense and assigning relevant values and labels. Users can also remove transactions when needed, ensuring their records stay accurate and up to date. The app features powerful search and filter capabilities, enabling users to quickly find specific records based on their preferences. During development, JSON Server was used to simulate real API interactions, ensuring a realistic testing environment.
 
 ### Screenshots
 
