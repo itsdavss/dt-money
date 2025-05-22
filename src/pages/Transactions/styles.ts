@@ -26,6 +26,29 @@ export const TransactionsTable = styled.table`
       border-top-right-radius: 6px;
       border-bottom-right-radius: 6px;
     }
+
+    button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+      
+
+    border: 0;
+    padding: 5px;
+    background: transparent;
+    border: 1px solid ${(props) => props.theme["green-300"]};
+    color: ${(props) => props.theme["green-300"]};
+    font-weight: bold;
+    border-radius: 6px;
+
+    &:hover {
+      background: ${(props) => props.theme["green-500"]};
+      border-color: ${(props) => props.theme["green-500"]};
+      color: ${(props) => props.theme.white};
+      transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+    }
+    }
   }
 `;
 

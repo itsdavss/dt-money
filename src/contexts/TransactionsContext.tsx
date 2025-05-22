@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import { ReactNode, useCallback, useEffect, useState } from "react";
 import { api } from "../lib/axios";
 import { createContext } from "use-context-selector";
@@ -15,6 +16,7 @@ interface TransactionContextType {
   transactions: Transaction[];
   fetchTransactions: (query?: string) => Promise<void>;
   createTransaction: (data: CreateTransactionInput) => Promise<void>;
+  deleteTransaction: (id: number) => void;
 }
 
 interface TransactionsProviderProps {
@@ -62,13 +64,25 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
     []
   );
 
+  const deleteTransaction = useCallback(async (id: number) => {
+    await api.delete(`/transactions/${id}`);
+    setTransactions((prevTransactions) =>
+      prevTransactions.filter((transaction) => transaction.id !== id)
+    );
+  }, []);
+
   useEffect(() => {
     fetchTransactions();
   }, [fetchTransactions]);
 
   return (
     <TransactionsContext.Provider
-      value={{ transactions, fetchTransactions, createTransaction }}
+      value={{
+        transactions,
+        fetchTransactions,
+        createTransaction,
+        deleteTransaction,
+      }}
     >
       {children}
     </TransactionsContext.Provider>
